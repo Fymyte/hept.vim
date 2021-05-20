@@ -1,7 +1,7 @@
 " Vim syntax file
 " Langage: Heptagon
 " Maintaner: Fymyte
-" Last Change: May 18, 2021
+" Last Change: May 20, 2021
 
 if exists("b:current_syntax")
   finish
@@ -27,10 +27,10 @@ syn match   heptFuncName    "\%(r#\)\=\%([^[:cntrl:][:space:][:punct:][:digit:]]
 syn match   heptIdentifier  "\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*" display contained
 
 
-
 syn keyword heptKeyword type nextgroup=heptIdentifier skipwhite skipempty
 syn keyword heptKeyword fun node nextgroup=heptFuncName skipwhite skipempty
-syn keyword heptKeyword open var let tel returns const fby val when whenot merge
+syn keyword heptKeyword merge const nextgroup=heptIdentifier skipwhite skipempty
+syn keyword heptKeyword var let tel returns fby val when whenot
 syn keyword heptBoolean true false
 
 let b:current_syntax = "hept"
