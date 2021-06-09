@@ -30,7 +30,7 @@ syn match   heptIdentifier  "\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([
 syn keyword heptKeyword type nextgroup=heptIdentifier skipwhite skipempty
 syn keyword heptKeyword fun node nextgroup=heptFuncName skipwhite skipempty
 syn keyword heptKeyword merge const nextgroup=heptIdentifier skipwhite skipempty
-syn keyword heptKeyword var let tel returns fby val when whenot
+syn keyword heptKeyword var let tel returns fby val when whenot open
 syn keyword heptBoolean true false
 
 let b:current_syntax = "hept"
